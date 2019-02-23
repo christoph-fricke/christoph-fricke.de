@@ -1,0 +1,27 @@
+@import "utils/colors";
+@import "utils/spacings";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: $font-16;
+  font-weight: 400;
+  line-height: 1;
+
+  background: $color-n1000;
+  color: $color-n300;
+  height: $spacing-48;
+
+  &__spaceholder {
+    width: 100%;
+    height: $spacing-48;
+  }
+}

@@ -1,0 +1,131 @@
+@import "utils/colors";
+@import "utils/spacings";
+@import "utils/shadows";
+
+.content {
+  width: $spacing-384;
+
+  &__title {
+    font-family: "Nunito", sans-serif;
+    font-size: $font-30;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $color-n1000;
+
+    margin: 0 0 $spacing-8 0;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 2px;
+      width: $spacing-48;
+      background: $color-p400;
+      margin-top: -$spacing-8;
+    }
+  }
+
+  &__text {
+    font-family: "Nunito", sans-serif;
+    font-size: $font-18;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-n1000;
+
+    margin: 0;
+  }
+}
+
+.link {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: $font-24;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-p800;
+
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+
+  margin: $spacing-4 0 $spacing-16 0;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+    color: $color-p900;
+  }
+}
+
+.button {
+  background: $color-p200;
+  text-decoration: none;
+  height: $spacing-64;
+  border-radius: $spacing-32;
+  padding-left: $spacing-32;
+  margin-top: $spacing-16;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Nunito", sans-serif;
+  font-size: $font-24;
+  font-weight: 400;
+  line-height: 1;
+  color: $color-p900;
+
+  box-shadow: $shadow-z1;
+  transition: all 200ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background: $color-p300;
+    box-shadow: $shadow-z2;
+
+    & .button__icon {
+      background: $color-p500;
+    }
+  }
+
+  &__icon {
+    background: $color-p400;
+    fill: $color-p900;
+    height: $spacing-64;
+    width: $spacing-64;
+    padding: $spacing-12;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+  }
+}
+
+.social-link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    & .social-link__icon {
+      background: $color-p500;
+      box-shadow: $shadow-z1;
+    }
+  }
+
+  &__container {
+    margin-top: $spacing-8;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    background: $color-p400;
+    fill: $color-p900;
+
+    height: $spacing-48;
+    width: $spacing-48;
+    padding: $spacing-8;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+  }
+}

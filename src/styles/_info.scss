@@ -1,0 +1,33 @@
+@import "utils/colors";
+@import "utils/spacings";
+
+.short-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing-48;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    background: $color-p400;
+    fill: $color-p900;
+
+    width: $spacing-64;
+    height: $spacing-64;
+    padding: $spacing-16;
+    border-radius: 100%;
+  }
+
+  &__title {
+    font-family: "Nunito", sans-serif;
+    font-size: $font-30;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $color-n1000;
+
+    margin: 0 0 0 $spacing-16;
+  }
+}
