@@ -64,7 +64,7 @@
   padding-left: $spacing-32;
   margin-top: $spacing-16;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
 
@@ -89,6 +89,7 @@
   }
 
   &__icon {
+    margin-left: $spacing-48;
     background: $color-p400;
     fill: $color-p900;
     height: $spacing-64;
