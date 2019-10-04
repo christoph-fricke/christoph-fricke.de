@@ -4,12 +4,14 @@
 .short-info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: $spacing-48;
 }
 
 .info {
   display: flex;
   align-items: center;
+  margin-top: $spacing-8;
 
   &__icon {
     background: $color-p400;

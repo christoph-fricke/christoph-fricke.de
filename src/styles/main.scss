@@ -25,11 +25,14 @@ body {
 
 .main {
   margin: -$spacing-96 $spacing-24 0 $spacing-24;
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
+  padding: $spacing-24;
 }
 
 .container {
   margin: $spacing-64 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
